@@ -1,0 +1,24 @@
+Problem Statement:
+Sample Input
+5
+
+Sample Output
+1
+121
+12321
+1234321
+123454321
+
+Program:
+for i in range(1, int(input()) + 1):
+    print(((10**i - 1) // 9)**2)
+
+Output:
+Input (stdin)
+    5
+Your Output (stdout)
+    1
+    121
+    12321
+    1234321
+    123454321
