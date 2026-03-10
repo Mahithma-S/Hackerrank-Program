@@ -1,0 +1,29 @@
+Problem Statement:
+Sample Input
+3
+4
+5
+
+Sample Output
+81
+1
+
+Program:
+a = int(input())
+b = int(input())
+m = int(input())
+
+print(pow(a, b))
+print(pow(a, b, m))
+
+Output:
+Input (stdin)
+    3
+    4
+    5
+Your Output (stdout)
+    81
+    1
+Expected Output
+    81
+    1
