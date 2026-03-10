@@ -1,0 +1,25 @@
+Problem Statement:
+Sample Input
+10
+10
+
+Sample Output
+45°
+Program:
+import math
+
+ab = float(input())
+bc = float(input())
+angle = math.degrees(math.atan2(ab, bc))
+print(f"{round(angle)}{chr(176)}")
+
+Output:
+Input (stdin)
+    10
+    10
+
+Your Output (stdout)
+    45°
+
+Expected Output
+    45°
