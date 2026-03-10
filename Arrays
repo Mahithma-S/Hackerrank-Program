@@ -1,0 +1,27 @@
+Problem Statement:
+Sample Input
+1 2 3 4 -8 -10
+
+Sample Output
+[-10.  -8.   4.   3.   2.   1.]
+
+Program:
+import numpy
+import numpy
+
+def arrays(arr):
+    return numpy.array(arr[::-1], float)
+
+arr = input().strip().split(' ')
+result = arrays(arr)
+print(result)
+
+Output:
+Input (stdin)
+    1 2 3 4 -8 -10
+
+Your Output (stdout)
+    [-10.  -8.   4.   3.   2.   1.]
+
+Expected Output
+    [-10.  -8.   4.   3.   2.   1.]
