@@ -1,0 +1,28 @@
+Problem Statement:
+Sample Input
+  1+2j
+
+Sample Output
+ 2.23606797749979 
+ 1.1071487177940904
+
+Program:
+import cmath
+
+z = complex(input().strip())
+r = abs(z)
+phi = cmath.phase(z)
+print(r)
+print(phi)
+
+Output:
+Input (stdin)
+    1+2j
+
+Your Output (stdout)
+    2.23606797749979
+    1.1071487177940904
+
+Expected Output
+    2.23606797749979
+    1.1071487177940904
