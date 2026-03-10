@@ -1,0 +1,40 @@
+Problem Statement:
+Sample Input
+4 
+a a c d
+2
+
+Sample Output
+0.8333
+
+Program:
+from itertools import combinations
+
+n = int(input())
+chars = input().split()
+k = int(input())
+target = 'a'
+
+indices = list(range(1, n + 1))
+all_comb = list(combinations(indices, k))
+
+count = 0
+for combo in all_comb:
+    if any(chars[i-1] == target for i in combo):
+        count += 1
+
+probability = count / len(all_comb)
+print(f"{probability:.4f}")
+
+Output:
+Input (stdin)
+
+    4
+    a a c d
+    2
+
+Your Output (stdout)
+    0.8333
+
+Expected Output
+    0.833333333333
