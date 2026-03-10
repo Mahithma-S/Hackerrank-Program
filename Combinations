@@ -1,0 +1,13 @@
+from itertools import combinations_with_replacement
+def solve_hackerrank_combinations_with_replacement():
+    try:
+        s, k_str = input().split()
+        k = int(k_str)
+        sorted_s = sorted(s)
+        combs = combinations_with_replacement(sorted_s, k)
+        for comb in combs:
+            print("".join(comb))
+    except ValueError:
+        pass
+if __name__ == "__main__":
+    solve_hackerrank_combinations_with_replacement()
