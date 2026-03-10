@@ -1,0 +1,38 @@
+Problem Statement:
+Sample Input
+2 2
+1 2
+3 4
+
+Sample Output
+[[1 3]
+ [2 4]]
+[1 2 3 4]
+
+Program:
+import numpy
+
+n, m = map(int, input().split())
+storage = []
+for _ in range(n):
+    row = list(map(int, input().split()))
+    storage.append(row)
+
+my_array = numpy.array(storage)
+print(numpy.transpose(my_array))
+print(my_array.flatten())
+
+Output:
+Input (stdin)
+    2 2
+    1 2
+    3 4
+
+Your Output (stdout)
+    [[1 3]
+     [2 4]]
+    [1 2 3 4]
+
+Expected Output
+    [[1 3]
+     [2 4]]
