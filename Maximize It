@@ -1,0 +1,40 @@
+Problem Statement:
+
+Sample Input
+3 1000
+2 5 4
+3 7 8 9 
+5 5 7 8 9 10 
+Sample Output
+206
+
+Program:
+import itertools
+
+k, m = map(int, input().split())
+lists = []
+for _ in range(k):
+    row = list(map(int, input().split()))
+    lists.append(row[1:])
+
+combinations = itertools.product(*lists)
+max_val = 0
+for combo in combinations:
+    current_val = sum(x**2 for x in combo) % m
+    if current_val > max_val:
+        max_val = current_val
+print(max_val)
+
+Output:
+Input (stdin)
+
+    3 1000
+    2 5 4
+    3 7 8 9
+    5 5 7 8 9 10
+
+Your Output (stdout)
+    206
+
+Expected Output
+    206
