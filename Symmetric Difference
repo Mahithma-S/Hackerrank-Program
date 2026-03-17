@@ -1,0 +1,40 @@
+Problem Statement:
+Sample Input
+STDIN       Function
+-----       --------
+4           set a size M = 4
+2 4 5 9     a = {2, 4, 5, 9}
+4           set b size N = 4
+2 4 11 12   b = {2, 4, 11, 12}
+
+Sample Output
+5
+9
+11
+12
+
+Program:
+m = int(input())
+a = set(map(int, input().split()))
+n = int(input())
+b = set(map(int, input().split()))
+diff = a.symmetric_difference(b)
+for item in sorted(diff):
+    print(item)
+
+Output:
+Input (stdin)
+    4
+    2 4 5 9
+    4
+    2 4 11 12
+Your Output (stdout)
+    5
+    9
+    11
+    12
+Expected Output
+    5
+    9
+    11
+    12
