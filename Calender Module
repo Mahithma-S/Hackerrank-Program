@@ -1,0 +1,21 @@
+Problem Statement:
+Sample Input
+08 05 2015
+
+Sample Output
+WEDNESDAY
+
+PROGRAM:
+
+import calendar
+month, day, year = map(int, input().split()
+day_index = calendar.weekday(year, month, day)
+print(calendar.day_name[day_index].upper()
+
+Output:
+Input (stdin)
+    08 05 2015
+Your Output (stdout)
+    WEDNESDAY
+Expected Output
+    WEDNESDAY
