@@ -1,0 +1,15 @@
+Problem Statement:
+Sample Input
+2 2
+1 2
+3 4
+
+Sample Output
+24
+
+Program:
+import numpy
+n, m = map(int, input().split())
+array = numpy.array([input().split() for _ in range(n)], int)
+sum_axis_0 = numpy.sum(array, axis=0)
+print(numpy.prod(sum_axis_0))
