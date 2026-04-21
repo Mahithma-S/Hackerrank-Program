@@ -1,0 +1,20 @@
+Problem Statement:
+Sample Input
+2
+.*\+
+.*+
+
+Sample Output
+True
+False
+
+Program:
+import re
+for i in range(int(raw_input())):
+    try:
+        s = raw_input()
+        re.compile(s)
+    except:
+        print False
+        continue
+    print True 
